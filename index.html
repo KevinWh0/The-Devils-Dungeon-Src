@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Hide scrollbars */
+    }
+    body {
+      background-color: black;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      image-rendering: optimizeSpeed; /* Older versions of FF          */
+      image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
+      image-rendering: -webkit-optimize-contrast; /* Safari                        */
+      image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+      image-rendering: pixelated; /* Awesome future-browsers       */
+      -ms-interpolation-mode: nearest-neighbor; /* IE                            */
+    }
+  </style>
+  <head>
+    <title>The Devils Dungeon</title>
+    <link rel="shortcut icon" href="../assets/player/playerDown.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="module"></script>
+
+  <body>
+    <div id="canvasHolder"></div>
+  </body>
+</html>

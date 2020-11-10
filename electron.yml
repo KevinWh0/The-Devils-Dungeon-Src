@@ -1,0 +1,19 @@
+appId: "com.thedevilsdungeon.eeee"
+productName: "the-devils-dungeon"
+
+asar: true
+
+directories:
+  output: "builds"
+files:
+  - "./assets"
+  - "./maps"
+  - "./scripts"
+  - "./index.html"
+  - "./index.js"
+  - "./main.js"
+  - "./package.json"
+
+win:
+  target: zip
+  icon: "./assets/misc/Icon.png"
